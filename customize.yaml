@@ -1,8 +1,16 @@
 ########CUSTOMIZE DEVICES########
      device_tracker.bruh2_cailin6p:
+        entity_picture: https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xat1/t31.0-8/1654585_10155774155960164_4241292795035795981_o.jpg
         friendly_name: Cailin
      device_tracker.bruh2_ben6p:
+        entity_picture: https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/02f/272/1939778.jpg
         friendly_name: Ben
+     device_tracker.ben_car:
+        icon: mdi:car
+        friendly_name: Prius
+     device_tracker.cailin_car:
+        icon: mdi:car
+        friendly_name: Civic
 
 ######CUSTOMIZE MEDIA PLAYERS######
      media_player.bcrcc:
@@ -47,12 +55,6 @@
      switch.avr_power:
         friendly_name: AVR Power
         icon: mdi:television
-     switch.br_finder:
-        friendly_name: Ben's Phone Finder
-        icon: mdi:bell-ring
-     switch.cr_finder:
-        friendly_name: Cailin's Phone Finder
-        icon: mdi:bell-ring
 ####LIGHTS####
      switch.livingroom_lifx:
         icon: mdi:lightbulb
@@ -157,21 +159,21 @@
      sensor.party_button:
         friendly_name: "Party Button Status"
         icon: mdi:cake
-####MQTT TASKER####
+####CELL PHONES####
      input_select.ben_status:
         friendly_name: "Ben's Status"
-     sensor.ben_eta:
+     sensor.eta_ben:
         icon: mdi:map
         friendly_name: "Ben's ETA"
-     sensor.ben_destination:
+     sensor.destination_ben:
         icon: mdi:map-marker
         friendly_name: "Ben's Destination"
      input_select.cailin_status:
         friendly_name: "Cailin's Status"
-     sensor.cailin_eta:
+     sensor.eta_ben:
         icon: mdi:map
         friendly_name: "Cailin's ETA"
-     sensor.cailin_destination:
+     sensor.destination_cailin:
         icon: mdi:map-marker
         friendly_name: "Cailin's Destination"
      sensor.ben_nexus_6p_battery:
@@ -269,6 +271,26 @@
         icon: mdi:alert
      script.morning_dark:
         hidden: true
+     script.media_playing_night:
+        friendly_name: "Media Playing Night"
+        icon: mdi:play
+     script.media_stopped_night:
+        friendly_name: "Media Stopped Night"
+        icon: mdi:stop
+     script.prayer_time:
+        icon: mdi:crown
+     script.br_finder:
+        friendly_name: "Ben's Phone Finder"
+        icon: mdi:bell-ring
+     script.cr_finder:
+        friendly_name: "Cailin's Phone Finder"
+        icon: mdi:bell-ring
+     script.car_finder_ben_notify:
+        friendly_name:  "Request Car Location"
+        icon: mdi:map
+     script.car_finder_cailin_notify:
+        friendly_name: "Request Car Location"
+        icon: mdi:map
 ########CUSTOMIZE SCENES########
      scene.vol_up:
         icon: mdi:volume-high
@@ -299,9 +321,3 @@
         icon: mdi:lock
      input_select.media_lockout:
         icon: mdi:lock
-
-########CUSTOMIZE SHELL COMMANDS########
-#     shell_command.ben6p_update:
-#       friendly_name: Ben6P Update
-#    shell_command.cailin6p_update:
-#       friendly_name: Cailin6P Update

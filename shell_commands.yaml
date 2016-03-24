@@ -17,5 +17,7 @@
   strobe_raspberry: sudo hyperion-remote --priority 50 --effect "Strobe Raspbmc" &
   strobe_white: sudo hyperion-remote --priority 50 --effect "Strobe white" &
   hyperion_off: sudo hyperion-remote --priority 50 --clearall &
+  br_finder: curl -X POST https://maker.ifttt.com/trigger/{find_phone_ben}/with/key/ABC123ABC123
+  cr_finder: curl -X POST https://maker.ifttt.com/trigger/{find_phone_cailin}/with/key/ABC123ABC123
 #  vol_up: sudo python /home/pi/ha/cecscript/volup.py
 #  vol_down: sudo python /home/pi/ha/cecscript/voldown.py

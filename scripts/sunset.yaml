@@ -3,9 +3,9 @@ sequence:
   event_data:
     name: EVENT
     message: SUNSET blinds closed
-- execute_service: notify.notify
-  service_data:
+- service: notify.notify
+  data:
     message: "The sun is setting. Closing blinds."
-- execute_service: switch.turn_off
-  service_data:
-    entity_id: group.rfblinds
+- service: switch.turn_off
+  data:
+    entity_id: group.brawler

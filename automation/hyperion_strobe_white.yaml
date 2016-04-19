@@ -4,4 +4,4 @@ trigger:
     entity_id: input_select.hyperion_effect
     state: "Strobe White"
 action:
-  service: shell_command.strobe_white
+  service: shell_command.h_strobe_white

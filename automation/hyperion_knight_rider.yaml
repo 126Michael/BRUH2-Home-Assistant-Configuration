@@ -4,4 +4,4 @@ trigger:
     entity_id: input_select.hyperion_effect
     state: "Knight Rider"
 action:
-  service: shell_command.knight_rider
+  service: shell_command.h_knight_rider

@@ -1,35 +1,77 @@
-  - name: all on
+  - name: start
     entities:
-      switch.alarm: off
       switch.bedroom_lamp: on
-      switch.bedroom_lifx: on
+      switch.bedroom_fan: on
       switch.livingroom_wall_outlet: on
-      light.jar_led: on
-      light.bedroom_color_lifx: on
-      light.living_room_lifx: on
-      switch.wemo_insight_5050_led: on
       switch.livingroom_desk_outlet: on
-      switch.livingroom_lifx: on
+      switch.kitchen_outlet: on
+      switch.pc_power: on
+      switch.tv_power: on
+      switch.hyperion: on
+      light.jar_led:
+        state: on
+        rgb_color: [255,255,255]
+      light.bathroom_led:
+        state: on
+        rgb_color: [255,255,255]
+      light.br_lifx:
+        state: on
+        brightness: 255
+        color_temp: 233
+        rgb_color: [255,255,255]
+        transition: 2
+      light.lr_fireplace_color_lifx:
+        state: on
+        brightness: 255
+        color_temp: 233
+        rgb_color: [255,255,255]
+        transition: 2
+      light.lr_door_color_lifx:
+        state: on
+        brightness: 255
+        color_temp: 233
+        rgb_color: [255,255,255]
+        transition: 2
 
-  - name: all off
+  - name:  shutdown
     entities:
       switch.bedroom_lamp: off
       switch.bedroom_fan: off
       switch.livingroom_wall_outlet: off
-      light.jar_led: off
-      light.bedroom_color_lifx: off
-      light.living_room_lifx: off
-      switch.wemo_insight_5050_led: off
-      switch.livingroom_wall_outlet: off
-      light.rp2: off
       switch.livingroom_desk_outlet: off
-      light.br_node_led: off
+      switch.kitchen_outlet: off
+      switch.pc_power: off
       switch.tv_power: off
-      switch.alarm: on
+      switch.hyperion: off
+      light.jar_led: off
+      light.bathroom_led: off
+      light.br_lifx: off
+      light.lr_fireplace_color_lifx: off
+      light.lr_door_color_lifx: off
 
-  - name: lifx alert
+  - name: night_time 
     entities:
-      script.lifx_alert: on
+      switch.bedroom_lamp: on
+      switch.pc_power: on
+      switch.tv_power: on
+      light.br_lifx:
+        state: on
+        brightness: 255
+        color_temp: 233
+        rgb_color: [255,255,255]
+        transition: 2
+      light.lr_fireplace_color_lifx:
+        state: on
+        brightness: 255
+        color_temp: 233
+        rgb_color: [255,255,255]
+        transition: 2
+      light.lr_door_color_lifx:
+        state: on
+        brightness: 255
+        color_temp: 233
+        rgb_color: [255,255,255]
+        transition: 2
 
 ####ARCHIVED####
 #  - name: blinds open

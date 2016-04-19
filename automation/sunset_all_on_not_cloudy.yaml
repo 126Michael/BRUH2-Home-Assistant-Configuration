@@ -6,7 +6,7 @@ trigger:
 condition:
   - platform: numeric_state
     entity_id: sensor.weather_cloud_coverage
-    below: 70
+    below: 90
   - platform: state
     entity_id: group.all_devices
     state: "home"

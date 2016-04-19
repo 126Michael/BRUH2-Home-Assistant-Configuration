@@ -3,9 +3,15 @@ trigger:
   - platform: state
     entity_id: sensor.lr_motion
     state: "motion detected"
+  - platform: state
+    entity_id: sensor.btr_motion
+    state: "motion detected"
 condition:
+  - platform: state
+    entity_id: sun.sun
+    state: "below_horizon"
   - platform: template
-    value_template: "{% if states('input_select.ben_status') == 'sleeping' or states('input_select.cailin_status') == 'sleeping' %}true{% else %}false{% endif %}"
+    value_template: "{% if states('input_select.ben_status') == 'sleeping' or states('input_select.cailin_status') == 'sleeping' and now.hour <= 6 %} true {% elif states('input_select.ben_status') == 'sleeping' and states('input_select.cailin_status') == 'sleeping' %}true{% else %}false{% endif %}"
   - platform: state
     entity_id: input_select.company
     state: "disabled"

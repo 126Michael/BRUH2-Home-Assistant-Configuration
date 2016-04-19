@@ -4,4 +4,4 @@ trigger:
     entity_id: input_select.hyperion_effect
     state: "Mood Blobs Rainbow"
 action:
-  service: shell_command.rainbow_mood
+  service: shell_command.h_rainbow_mood

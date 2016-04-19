@@ -1,7 +1,7 @@
 alias: "CMStormtrooper Off"
 trigger:
   - platform: state
-    entity_id: device_tracker.bruh2_ben6p
+    entity_id: device_tracker.HA_ben6p
     from: "home"
     to: "not_home"
 condition:

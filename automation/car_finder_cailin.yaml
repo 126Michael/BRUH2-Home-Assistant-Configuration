@@ -11,8 +11,8 @@ action:
   data_template:
     topic: >
       {% if is_state('sensor.car_driving_cailin', 'Prius') %}
-        owntracks/bruh2/prius
+        owntracks/HA/prius
       {% elif is_state('sensor.car_driving_cailin', 'Civic')%}
-        owntracks/bruh2/civic
+        owntracks/HA/civic
       {% endif %}
-    payload_template: '{"_type":"location","lat":{{states.device_tracker.bruh2_cailin6p.attributes.latitude}},"lon":{{ states.device_tracker.bruh2_cailin6p.attributes.longitude}},"tst":1234,"acc":{{states.device_tracker.bruh2_cailin6p.attributes.gps_accuracy}}}'
+    payload: '{"_type":"location","lat":{{states.device_tracker.cailin6p_cailin6p.attributes.latitude}},"lon":{{ states.device_tracker.cailin6p_cailin6p.attributes.longitude}},"tst":1234,"acc":{{states.device_tracker.cailin6p_cailin6p.attributes.gps_accuracy}}}'

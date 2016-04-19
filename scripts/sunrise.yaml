@@ -3,12 +3,12 @@ sequence:
   event_data:
     name: EVENT
     message: SUNRISE blinds open
-- execute_service: notify.notify
-  service_data:
+- service: notify.notify
+  data:
     message: "The sun is up and the kitchen and living room blinds are open!"
-- execute_service: switch.turn_on
-  service_data:
+- service: switch.turn_on
+  data:
     entity_id: switch.livingroom_blinds
-- execute_service: switch.turn_on
-  service_data:
+- service: switch.turn_on
+  data:
     entity_id: switch.kitchen_blinds

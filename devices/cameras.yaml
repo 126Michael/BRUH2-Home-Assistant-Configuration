@@ -1,11 +1,11 @@
 - platform: mjpeg
-  mjpeg_url: http://192.XXX.XXX.XXX:XXX/videostream.cgi
+  mjpeg_url: http://XXX.XXX.XXX.XXX:10010/videostream.cgi
   name: Front Door
-  username: XXXXXXX
-  password: XXXXXXX
+  username: USERNAME
+  password: PASSWORD
 ##CAMERA 2
 - platform: mjpeg
-  mjpeg_url: http://192..XXX.XXX.XXX:XXX/videostream.cgi
+  mjpeg_url: http://XXX.XXX.XXX.XXX:10001/videostream.cgi
   name: Porch
-  username: XXXXXXXX
-  password: XXXXXXX
+  username: USERNAME
+  password: PASSWORD 

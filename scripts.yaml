@@ -2,6 +2,7 @@ bedtime_ben: !include scripts/bedtime_ben.yaml
 bedtime_cailin: !include scripts/bedtime_cailin.yaml
 morning: !include scripts/morning.yaml
 morning_dark: !include scripts/morning_dark.yaml
+morning_dark_one: !include scripts/morning_dark_one.yaml
 sunrise: !include scripts/sunrise.yaml
 sunset: !include scripts/sunset.yaml
 alarm_clock_morning: !include scripts/alarm_clock_morning.yaml
@@ -19,6 +20,10 @@ all_on_day: !include scripts/all_on_day.yaml
 ####TRIGGERED LIGHTS
 motion_light_lr: !include scripts/motion_light_lr.yaml
 timer_lr: !include scripts/timer_lr.yaml
+motion_bathroom: !include scripts/motion_bathroom.yaml
+motion_bathroom_timer: !include scripts/motion_bathroom_timer.yaml
+motion_light_br: !include scripts/motion_light_br.yaml
+motion_light_br_timer: !include scripts/motion_light_br_timer.yaml
 ####NOTIFICATIONS AND ALERTS####
 notify_update: !include scripts/notify_update.yaml
 lifx_alert: !include scripts/lifx_alert.yaml
@@ -35,4 +40,9 @@ prayer_time: !include scripts/prayer_time.yaml
 ####MEDIA####
 media_playing_night: !include scripts/media_playing_night.yaml
 media_stopped_night: !include scripts/media_stopped_night.yaml
-
+####Cars####
+car_finder_ben_notify: !include scripts/car_finder_ben_notify.yaml
+car_finder_cailin_notify: !include scripts/car_finder_cailin_notify.yaml
+####Phones####
+br_finder: !include scripts/br_finder.yaml
+cr_finder: !include scripts/cr_finder.yaml

@@ -7,9 +7,9 @@ default_view:
     - group.cameras
     - group.living_room
     - group.kitchen
-    - group.rfblinds
-    - device_tracker.bruh2_ben6p
-    - device_tracker.bruh2_cailin6p
+    - group.brawler
+    - device_tracker.ben6p_ben6p
+    - device_tracker.cailin6p_cailin6p
 
 alarm:
   name: Alarm
@@ -23,7 +23,7 @@ blinds:
   name: blinds
   view: yes
   entities:
-    - group.rfblinds
+    - group.brawler
 
 environment:
   name: environment
@@ -41,8 +41,8 @@ Family:
   entities:
     - group.ben
     - group.cailin
-    - device_tracker.bruh2_ben6p
-    - device_tracker.bruh2_cailin6p
+    - device_tracker.ben6p_ben6p
+    - device_tracker.cailin6p_cailin6p
 
 lights:
   name: lights
@@ -78,6 +78,7 @@ Alarm Status:
     - input_boolean.notify_home
     - alarm_control_panel.alarm
     - sensor.br_motion
+    - sensor.btr_motion
     - sensor.lr_motion
     - scene.lifx_alert
 
@@ -96,7 +97,7 @@ Bedroom:
     - switch.bedroom_lifx
     - light.br_node_led
 
-RFBlinds: 
+Brawler: 
     - switch.bedroom_blinds
     - switch.kitchen_blinds
     - switch.livingroom_blinds
@@ -107,27 +108,38 @@ Cameras:
 
 Ben:
     - script.refresh_devices
-    - switch.br_finder
+    - script.br_finder
+    - script.car_finder_ben_notify
     - input_select.ben_status
-    - sensor.ben_destination
-    - sensor.ben_eta
+    - sensor.car_driving_ben
+    - sensor.destination_ben
+    - sensor.eta_ben
     - sensor.ben_nexus_6p_battery
 
 Cailin:
     - script.refresh_devices
     - switch.cr_finder
+    - script.cr_finder
+    - script.car_finder_cailin_notify
     - input_select.cailin_status
-    - sensor.cailin_destination
-    - sensor.cailin_eta
+    - sensor.car_driving_cailin
+    - sensor.destination_cailin
+    - sensor.eta_cailin
     - sensor.cailin_nexus_6p_battery
 
 Global:
     - script.all_off
     - script.all_on
     - script.sexy_time
-    - script.alarmred
+    - script.prayer_time
     - script.party_time
     - script.party_over
+    - script.media_playing_night
+    - script.media_stopped_night
+    - scene.startup
+    - scene.shutdown
+    - scene.night_time
+    - input_select.lullaby
 
 Home Assistant Status:
     - script.restart_ha
@@ -138,14 +150,16 @@ Home Assistant Status:
 
 Humidity:
    - sensor.weather_humidity
-   - sensor.lr_humidity
    - sensor.br_humidity
+   - sensor.btr_humidity
+   - sensor.lr_humidity
  
 Kitchen Lights:
     - switch.kitchen_outlet
    
 Light:
    - sensor.br_light
+   - sensor.btr_light
    - sensor.lr_light
 
 Party:
@@ -165,13 +179,14 @@ Speedtest:
 Living Room:
     - light.lr_door_color_lifx
     - light.lr_fireplace_color_lifx
+    - light.osmc
     - input_select.hyperion_effect
-    - light.rp2
+    - switch.hyperion
+    - switch.wemo_insight_5050_led
     - light.jar_led
     - switch.livingroom_wall_outlet
 
 Bathroom:
-    - switch.wemo_insight_5050_led
     - light.bathroom_led
 
 Lockouts:
@@ -186,6 +201,7 @@ Devices:
     - switch.tv_input
     - scene.vol_up
     - scene.vol_down
+    - media_player.living_room_media
     - media_player.bcrcc
     - media_player.kodi_cmstormtrooper
     - media_player.openelec
@@ -214,4 +230,5 @@ Temperature:
    - sensor.weather_temperature
    - sensor.weather_apparent_temperature
    - sensor.br_temperature
+   - sensor.btr_temperature
    - sensor.lr_temperature

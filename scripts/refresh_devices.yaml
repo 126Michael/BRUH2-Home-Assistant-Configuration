@@ -1,3 +1,9 @@
 sequence:
-- execute_service: shell_command.ben6p_update
-- execute_service: shell_command.cailin6p_update
+- service: mqtt.publish
+  data:
+    topic: "owntracks/ben6p/ben6p/cmd"
+    payload_template: '{"_type":"cmd","action":"reportLocation"}'
+- service: mqtt.publish
+  data:
+    topic: "owntracks/cailin6p/cailin6p/cmd"
+    payload_template: '{"_type":"cmd","action":"reportLocation"}'

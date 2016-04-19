@@ -1,1 +1,20 @@
   platform: owntracks
+#  platform: nmap_tracker
+#  hosts: 192.168.1.105-106
+#  home_interval: 10
+
+#device_tracker 3:
+#  platform: mqtt
+#  qos: 0
+#  devices:
+#    ben_car: location/ben_car
+#    cailin_car: location/cailin_car
+
+#device_tracker 4:
+#  platform: ddwrt
+#  host: 192.168.1.1
+#  username: USERNAME
+#  password: PASSWORD
+#  track_new_devices: no
+#  interval_seconds: 12
+#  consider_home: 300

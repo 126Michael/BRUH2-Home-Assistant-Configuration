@@ -5,7 +5,12 @@ trigger:
     state: "playing"
   - platform: state
     entity_id: media_player.osmc
-    state: "playing"
+    from: "idle"
+    to: "playing"
+  - platform: state
+    entity_id: media_player.osmc
+    from: "paused"
+    to: "playing"
 condition:
   - platform: state
     entity_id: sun.sun

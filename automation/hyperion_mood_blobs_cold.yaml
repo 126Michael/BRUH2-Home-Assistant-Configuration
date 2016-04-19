@@ -4,4 +4,4 @@ trigger:
     entity_id: input_select.hyperion_effect
     state: "Mood Blobs Cold"
 action:
-  service: shell_command.mood_blobs_cold
+  service: shell_command.h_mood_blobs_cold

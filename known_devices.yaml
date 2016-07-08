@@ -1,14 +1,20 @@
 ben6p_ben6p:
   name: Ben
-  mac: A0:8D:16:FF:EC:49
+  mac: BT_A0:8D:16:FF:FC:5F
   picture: 
   track: yes
   hide_if_away: no
 
 cailin6p_cailin6p:
   name: Cailin
-  mac: AC:CF:85:01:4F:8A
+  mac: BT_AC:CF:85:01:60:BB
   picture: 
+  track: yes
+  hide_if_away: no
+
+watch_moto360:
+  name: Moto360
+  mac: BT_54:4A:16:36:71:9B
   track: yes
   hide_if_away: no
 
@@ -89,14 +95,14 @@ d073d5110648:
   track: no
   hide_if_away: no
 
-HA_prius:
+bruh2_prius:
   name: Prius
   mac: 
   picture: 
   track: yes
   hide_if_away: no
 
-HA_civic:
+bruh2_civic:
   name: Civic
   mac: 
   picture: 

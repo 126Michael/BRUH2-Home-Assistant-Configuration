@@ -38,6 +38,8 @@
 - !include automation/low_battery.yaml
 - !include automation/clap_bedtime.yaml
 - !include automation/clap_morning.yaml
+- !include automation/driving_ben_start.yaml
+- !include automation/driving_ben_stop.yaml
 ####INPUT SELECT####
 #- !include automation/lullaby.yaml
 ####PARTY BUTTON####

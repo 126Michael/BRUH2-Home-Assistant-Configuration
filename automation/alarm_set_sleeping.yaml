@@ -7,7 +7,7 @@ trigger:
     entity_id: input_select.cailin_status
     state: "sleeping"
 condition:
-  - platform: state
+  - condition: state
     entity_id: input_select.company
     state: "disabled"
 action:

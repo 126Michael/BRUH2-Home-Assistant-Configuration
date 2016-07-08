@@ -3,7 +3,7 @@ trigger:
   platform: sun
   event: sunrise
 condition:
-  platform: state
+  condition: state
   entity_id: input_select.company
   state: "disabled"
 action:

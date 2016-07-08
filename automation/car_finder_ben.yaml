@@ -11,8 +11,8 @@ action:
   data_template:
     topic: >
       {% if is_state('sensor.car_driving_ben', 'Prius') %}
-        owntracks/HA/prius
+        owntracks/bruh2/prius
       {% elif is_state('sensor.car_driving_ben', 'Civic')%}
-        owntracks/HA/civic
+        owntracks/bruh2/civic
       {% endif %}
     payload: '{"_type":"location","lat":{{states.device_tracker.ben6p_ben6p.attributes.latitude}},"lon":{{ states.device_tracker.ben6p_ben6p.attributes.longitude}},"tst":1234,"acc":{{states.device_tracker.ben6p_ben6p.attributes.gps_accuracy}}}'

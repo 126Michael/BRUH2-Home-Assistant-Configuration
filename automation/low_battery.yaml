@@ -7,7 +7,7 @@ trigger:
     entity_id: sensor.ben_nexus_6p_battery
     below: 5
 condition:
-  - platform: state
+  - condition: state
     entity_id: group.all_devices
     state: "home"
 action:

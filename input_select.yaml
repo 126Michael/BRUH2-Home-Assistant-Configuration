@@ -63,3 +63,12 @@ hyperion_effect:
    - "Sparks"
    - "Color Traces"
   initial: "Off"
+
+lullaby:
+  name: Lullaby
+  options:
+  - Rain
+  - Babbling Brook
+  - None
+  initial: None
+  icon: mdi:weather-rainy

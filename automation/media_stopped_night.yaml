@@ -7,10 +7,10 @@ trigger:
     entity_id: media_player.osmc
     state: "idle"
 condition:
-  - platform: state
-    entity_id: sun.sun
-    state: "below_horizon"
-  - platform: state
+  - condition: sun
+    after: sunset
+    after_offset: "-1:30:00"
+  - condition: state
     entity_id: input_select.media_lockout
     state: "disabled"
 action:

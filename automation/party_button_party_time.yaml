@@ -3,5 +3,9 @@ trigger:
   - platform: state
     entity_id: sensor.party_button
     state: "PARTY TIME"
+condition:
+  - condition: state
+    entity_id: group.all_devices
+    state: "home"
 action:
   service: script.party_time

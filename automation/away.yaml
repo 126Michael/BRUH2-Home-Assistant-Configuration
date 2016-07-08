@@ -5,9 +5,9 @@ trigger:
     from: "home"
     to: "not_home"
 condition:
-  - platform: template
+  - condition: template
     value_template: "{% if states('input_select.ben_status') != 'sleeping' and states('input_select.cailin_status') != 'sleeping' %}true{% else %}false{% endif %}"
-  - platform: state
+  - condition: state
     entity_id: input_select.company
     state: "disabled"
 action:

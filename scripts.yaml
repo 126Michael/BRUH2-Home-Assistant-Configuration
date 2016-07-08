@@ -43,6 +43,9 @@ media_stopped_night: !include scripts/media_stopped_night.yaml
 ####Cars####
 car_finder_ben_notify: !include scripts/car_finder_ben_notify.yaml
 car_finder_cailin_notify: !include scripts/car_finder_cailin_notify.yaml
+driving_ben_start: !include scripts/driving_ben_start.yaml 
+driving_ben_stop:  !include scripts/driving_ben_stop.yaml
 ####Phones####
 br_finder: !include scripts/br_finder.yaml
 cr_finder: !include scripts/cr_finder.yaml
+ifttt: !include scripts/IFTTT.yaml

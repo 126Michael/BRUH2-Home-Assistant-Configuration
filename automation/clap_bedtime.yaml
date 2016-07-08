@@ -4,7 +4,7 @@ trigger:
     entity_id: sensor.br_clap_sound
     state: "double clap"
 condition:
-  - platform: state
+  - condition: state
     entity_id: sun.sun
     state: "below_horizon"
 action:

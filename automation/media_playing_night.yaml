@@ -12,14 +12,13 @@ trigger:
     from: "paused"
     to: "playing"
 condition:
-  - platform: state
-    entity_id: sun.sun
-    state: "below_horizon"
-  - platform: state
+  - condition: sun
+    after: sunset
+    after_offset: "-1:30:00"
+  - condition: state
     entity_id: input_select.media_lockout
     state: "disabled"
-  - platform: state
-    entity_id: sensor.party_button
-    state: "Standby"
+  - condition: template
+    value_template: "{% if states('sensor.party_button') != 'PARTY TIME' or states('sensor.party_button') != 'Sexy Time'  or states('sensor.party_button') != 'ALARM'  %}true{% else %}false{% endif %}"
 action:
   service: script.media_playing_night

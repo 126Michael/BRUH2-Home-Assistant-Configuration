@@ -3,7 +3,7 @@ sequence:
   event_data:
     name: Ben
     message: is going to bed
-    entity_id: device_tracker.HA_ben6p
+    entity_id: device_tracker.ben6p_ben6p
 - service: switch.turn_off
   data:
     entity_id: switch.bedroom_lamp

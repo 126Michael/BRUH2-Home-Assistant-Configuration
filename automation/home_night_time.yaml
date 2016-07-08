@@ -8,10 +8,10 @@ trigger:
     entity_id: sensor.party_button
     state: "Standby"
 condition:
-  - platform: state
+  - condition: state
     entity_id: sun.sun
     state: "below_horizon"
-  - platform: template
+  - condition: template
     value_template: "{% if states('input_select.ben_status') != 'sleeping' and states('input_select.cailin_status') != 'sleeping' %}true{% else %}false{% endif %}"
 action:
   service: script.all_on

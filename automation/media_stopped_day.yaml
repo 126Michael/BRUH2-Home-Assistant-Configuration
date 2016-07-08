@@ -9,10 +9,10 @@ trigger:
     entity_id: sensor.party_button
     state: "Standby"
 condition:
-  - platform: state
+  - condition: state
     entity_id: sun.sun
     state: "above_horizon"
-  - platform: state
+  - condition: state
     entity_id: input_select.media_lockout
     state: "disabled"
 action:

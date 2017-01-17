@@ -66,7 +66,6 @@
 - !include automation/hyperion_color_traces.yaml
 - !include automation/hyperion_snake.yaml
 - !include automation/hyperion_cinema_dim_lights.yaml
-- !include automation/hyperion_cinema_dim_lights.yaml
 - !include automation/hyperion_cinema_brighten_lights.yaml
 - !include automation/hyperion_police_lights_single.yaml
 - !include automation/hyperion_random.yaml
@@ -75,4 +74,3 @@
 - !include automation/hyperion_system_shutdown.yaml
 - !include automation/hyperion_sparks_color.yaml
 - !include automation/hyperion_sparks.yaml
-- !include automation/hyperion_color_traces.yaml

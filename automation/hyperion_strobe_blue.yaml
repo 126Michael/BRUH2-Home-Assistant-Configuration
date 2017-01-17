@@ -1,4 +1,4 @@
-alias: "Strobe Raspberry"
+alias: "Strobe Blue"
 trigger:
   - platform: state
     entity_id: input_select.hyperion_effect
